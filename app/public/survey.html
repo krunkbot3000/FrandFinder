@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FrandFinder</title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
+
+  <style>
+    #subtitle,
+    #surveys,
+    .barrio {
+      font-family: Barrio
+    }
+
+    .jumbotron,
+    .panel-default>.panel-heading {
+      background-color: #2edf1e;
+      color: #000000
+    }
+
+    #imgMatch {
+      width: 250px;
+      height: 200px
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+      <h1 class="text-center"><span class="glyphicon glyphicon-th-list"></span>FrandFinder</h1>
+      <hr>
+      <h3 class="text-center" id="subtitle">You're Only As Good As The Company You Keep!</h3>
+      <br>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+
+        <!-- Reservation Page -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title" id="surveys">Questionnaire</h4>
+          </div>
+          <div class="panel-body">
+
+            <form role="form">
+
+              <div class="form-group">
+                <label for="friend-name">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+
+              <div class="form-group">
+                <label for="friend-photo">Link to Photo</label>
+                <input type="text" class="form-control" id="photo">
+              </div>
+              </hr>
+
+              <h4 class="barrio">Question 1</h4>
+              <h5><strong>Like to Travel?<strong></h5>
+              <select data-placeholder="" class"chosen-select" id="q1">
+                <option value="">Select an option</option>
+                <option value="1">1 (I'm a Homebody)</option>
+                <option value="2">2 </option>
+                <option value="3">3 </option>
+                <option value="4">4 </option>
+                <option value="5">5 (Jetsetter)</option>
+              </select>
+              <hr>
+              <h4 class="barrio">Question 2</h4>
+              <h5><strong>Like Sports?<strong></h5>
+              <select data-placeholder="" class"chosen-select" id="q2">
+                <option value="">Select an option</option>
+                <option value="1">1 (Did you say Spores?)</option>
+                <option value="2">2 </option>
+                <option value="3">3 </option>
+                <option value="4">4 </option>
+                <option value="5">5 (I'm a Walking Sports Almanac)</option>
+              </select>
+              <hr>
+              <h4 class="barrio">Question 3</h4>
+              <h5><strong>Rate your Fashion Sense...<strong></h5>
+              <select data-placeholder="" class"chosen-select" id="q3">
+                <option value="">Select an option</option>
+                <option value="1">1 (Getting Dressed is a Chore)</option>
+                <option value="2">2 </option>
+                <option value="3">3 </option>
+                <option value="4">4 </option>
+                <option value="5">5 (Fashionista)</option>
+              </select>
+              <hr>
+              <h4 class="barrio">Question 4</h4>
+              <h5><strong>Like Coffee?<strong></h5>
+              <select data-placeholder="" class"chosen-select" id="q4">
+                <option value="">Select an option</option>
+                <option value="1">1 (Dunkin' Brew is the best)</option>
+                <option value="2">2 </option>
+                <option value="3">3 </option>
+                <option value="4">4 </option>
+                <option value="5">5 (Juan Valdez is my coffee plug)</option>
+              </select>
+              <hr>
+              <h4 class="barrio">Question 5</h4>
+              <h5><strong>Rate your Cooking Skills<strong></h5>
+              <select data-placeholder="" class"chosen-select" id="q5">
+                <option value="">Select an option</option>
+                <option value="1">1 (I burn water)</option>
+                <option value="2">2 </option>
+                <option value="3">3 </option>
+                <option value="4">4 </option>
+                <option value="5">5 (Bon Appetit is for amateurs)</option>
+              </select>
+              <hr>
+              <h4 class="barrio">Question 6</h4>
+              <h5><strong>Thoughts on Beer?<strong></h5>
+              <select data-placeholder="" class"chosen-select" id="q6">
+                <option value="">Select an option</option>
+                <option value="1">1 (Thank GOD for Bud Seltzer)</option>
+                <option value="2">2 </option>
+                <option value="3">3 </option>
+                <option value="4">4 </option>
+                <option value="5">5 (My beer drinks beer)</option>
+              </select>
+              <hr>
+              <h4 class="barrio">Question 7</h4>
+              <h5><strong>Play Video Games?<strong></h5>
+              <select data-placeholder="" class"chosen-select" id="q7">
+                <option value="">Select an option</option>
+                <option value="1">1 (Games are meant to be played outside)</option>
+                <option value="2">2 </option>
+                <option value="3">3 </option>
+                <option value="4">4 </option>
+                <option value="5">5 (I level up 3x on a slow day)</option>
+              </select>
+              <hr>
+              <h4 class="barrio">Question 8</h4>
+              <h5><strong>Pick a number between 1 and 5.<strong></h5>
+              <select data-placeholder="" class"chosen-select" id="q8">
+                <option value="">Select an option</option>
+                <option value="1">1 </option>
+                <option value="2">2 </option>
+                <option value="3">3 </option>
+                <option value="4">4 </option>
+                <option value="5">5 </option>
+              </select>
+              <hr>
+              <h4 class="barrio">Question 9</h4>
+              <h5><strong>How much TV do you watch a day?<strong></h5>
+              <select data-placeholder="" class"chosen-select" id="q9">
+                <option value="">Select an option</option>
+                <option value="1">1 (I cut the cord years ago)</option>
+                <option value="2">2 </option>
+                <option value="3">3 </option>
+                <option value="4">4 </option>
+                <option value="5">5 (I average a 3 seasons a week)</option>
+              </select>
+              <hr>
+              <h4 class="barrio">Question 10</h4>
+              <h5><strong>Into Fantasy Sports?<strong></h5>
+              <select data-placeholder="" class"chosen-select" id="q10">
+                <option value="">Select an option</option>
+                <option value="1">1 (I didn't know witches played sports)</option>
+                <option value="2">2 </option>
+                <option value="3">3 </option>
+                <option value="4">4 </option>
+                <option value="5">5 (I have another draft in 10 minutes...)</option>
+              </select>
+              <hr>
+              <button type="submit" class="btn btn-primary submit">Submit</button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/">Home</a> | <a href="/api/friends">API Friend List</a> | <a
+            href="https://github.com/krunkbot3000/FrandFinder">GitHub</a></p>
+      </div>
+    </footer>
+
+  </div>
+  <!-- Below is a static modal example (meaning its position and display have been overridden) -->
+  <div id="modalCheck" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Included are the modal header, modal body (required for padding), and modal footer (optional)-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><strong>Best Match</strong></h4>
+        </div>
+        <div class="modal-body">
+          <h4 id="nameMatch">Rodney Ruxin</h4>
+          <img id="imgMatch" src="https://gph.is/XHl67d" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+  // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+  // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+  // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+  // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+  $(".submit").on("click", function (event) {
+    event.preventDefault();
+    // Here we grab the form elements
+    var userData = {
+      name: $("#name").val(),
+      photo: $("#photo").val(),
+      scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(),
+      $("#q8").val(), $("#q9").val(), $("#q10").val()]
+    };
+    console.log(userData);
+    // This line is the magic. It"s very similar to the standard ajax function we used.
+    // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+    // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
+    // depending on if a tables is available or not.
+    $.post("/api/friends", userData,
+      function (data) {
+        // If a table is available... tell user they are booked.
+        if (data) {
+          // alert("Yay! You are officially matched with: ")
+          $("#nameMatch").text(data.name);
+          $("#imgMatch").attr("src", data.photo);
+          $("#modalCheck").modal('toggle');
+        }
+        // If a table is available... tell user they on the waiting list.
+        else {
+          alert("Sorry you are on the wait list");
+        }
+        // Clear the form when submitting
+        $("#name").val("");
+        $("#photo").val("");
+        $("#q1").val("");
+        $("#q2").val("");
+        $("#q3").val("");
+        $("#q4").val("");
+        $("#q5").val("");
+        $("#q6").val("");
+        $("#q7").val("");
+        $("#q8").val("");
+        $("#q9").val("");
+        $("#q10").val("");
+      });
+  });
+</script>
